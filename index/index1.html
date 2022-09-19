@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style1.css">
+  <title>Posts Search</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div>
+      <a href="#" class="nav-logo">Roxanne</a>
+    </div>
+
+    <div class="nav-menu">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#posts" class="nav-link active">Posts Search</a></li>
+        <li class="nav-item"><a href="../index/index2.html" target="_blank" class="nav__link">Audio Player</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="search-wrapper">
+      <!-- <label for="search">Search posts by user id</label> -->
+      <input type="search" id="search" placeholder="Search by user id" data-search>
+      <button class="btn">ALL POSTS</button>
+    </div>
+
+    <div class="user-cards" data-user-cards-container>
+
+    </div>
+
+  </div>
+  <template data-user-template>
+    <div class="card rgb">
+      <div class="card-text">
+        <h2 data-text-title></h2>
+        <p data-text-body></p>
+      </div>
+      <div class="card-user">
+        <p data-user></p>
+      </div>
+    </div>
+  </template>
+
+  <script src="../js/main1.js"></script>
+</body>
+
+</html>
